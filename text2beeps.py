@@ -22,9 +22,8 @@ binText = ''
 i = 1
 while i < len(sys.argv):
 	binText += str2bin(sys.argv[i])
-	if len(sys.argv) > 2:
+	if i != len(sys.argv):
 		binText += '00100000'
 	i += 1
 
 print(bin2beep(binText))
-
